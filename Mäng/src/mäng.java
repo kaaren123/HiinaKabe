@@ -20,7 +20,7 @@ public class mäng extends Canvas implements Runnable{
 
     public mäng(){
 
-        handeler = new handeler();
+        // UUS        handeler = new handeler();
         aken aken1=new aken(1650,1080,"kk", this);
         handeler.addgameobject(new nupp(scale(300),scale(300),ID.mangija1));
         handeler.addgameobject(new nupp(scale(1000),scale(300),ID.mangija1));
