@@ -19,8 +19,6 @@ import java.awt.event.KeyEvent;
 public class mäng extends Canvas implements Runnable{
 
     public mäng(){
-
-        // UUS
         handeler = new handeler();
         aken aken1=new aken(1650,1080,"kk", this);
         handeler.addgameobject(new nupp(scale(300),scale(300),ID.mangija1));
@@ -31,7 +29,7 @@ public class mäng extends Canvas implements Runnable{
         handeler.addgameobject(new tekst(scale(350),scale(350),ID.tekst,"Gamer"));
         handeler.addgameobject(new nupp(scale(200),scale(200),ID.mangija2));
         this.addKeyListener(new KeyInput(handeler));
-        this.addMouseListener(new MouseListener1(handeler));
+        this.addMouseListener(new MouseListener1(handeler,2));
         this.requestFocus();
     }
     private handeler handeler;

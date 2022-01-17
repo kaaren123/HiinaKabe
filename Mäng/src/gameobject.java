@@ -4,6 +4,7 @@ public abstract class gameobject {
     protected int x,y;
     protected ID id;
     protected int Velx, Vely;
+    protected Color varv;
     public gameobject(int x,int y,ID id){
         this.x=x;
         this.y=y;
@@ -38,6 +39,9 @@ public abstract class gameobject {
     }
     public void Setvelx(int Velx){
         this.Velx=Velx;
+    }
+    public void varvi(Color varv){
+        this.varv=varv;
     }
     public int Getvely(){
         return Vely;}
